@@ -9,6 +9,16 @@ By Raekwon Gerold
 <details open>
 Before doing this you gotta do a few steps first:
 
+### Make sure your board LED strip is attached to your Arduino correctly
+<detials open>
+
+1. Make sure that the GND cable is connected to the GND pin
+2. Make sure that the Data/Pixel cable is connected to the D5 pin
+3. Make sure that the +5V cable is connected to the 3v3 Pin
+4. When done it should look this.
+<img src="https://i.postimg.cc/Jn7j8nmY/image.png" width="375px" alt="Arduino connected with LED">
+</details>
+
 ### Install the Adafruit Library
 <details open>
 
@@ -80,6 +90,9 @@ This should hopefully go well.
 🥳 CONGRATULATIONS YOU MADE YOUR OWN PHILIPS(Signify) HUE!! 🥳
 For maybe a few bucks? Adafruit also works on mobile! 😁👍
 </details>
+
+### Sources
+ - [The Adafruit IO Quickguide made by the teachers](https://docs.google.com/document/d/14jhaxaJUhuu0p6_u_oNj8_50Y6PAmtrvcePtKc0HDGs/edit?usp=sharing)
 
 </details>
 
