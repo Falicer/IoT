@@ -6,6 +6,7 @@ By Raekwon Gerold
 1. 🏮 [Philips Hue](https://github.com/Falicer/IoT/edit/main/README.md#philips-hue-assignment)
 
 # Philips Hue Assignment
+<details open>
 Before doing this you gotta do a few steps first:
 
 ### Install the Adafruit Library
@@ -78,6 +79,8 @@ This should hopefully go well.
 
 🥳 CONGRATULATIONS YOU MADE YOUR OWN PHILIPS(Signify) HUE!! 🥳
 For maybe a few bucks? Adafruit also works on mobile! 😁👍
+</details>
+
 </details>
 
 # Markup quicksheet
