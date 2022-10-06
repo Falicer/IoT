@@ -9,6 +9,11 @@ By Raekwon Gerold
 <details open>
 Before doing this you gotta do a few steps first:
 
+### Requirements
+- Arduino
+- Arduino IDE
+- Ledstrip
+
 ### Make sure your board LED strip is attached to your Arduino correctly
 <details open>
 
