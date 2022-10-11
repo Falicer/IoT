@@ -4,6 +4,7 @@ By Raekwon Gerold
 ## Table of Contents 🗂
 
 1. 🏮 [Philips Hue](https://github.com/Falicer/IoT/edit/main/README.md#philips-hue-assignment)
+2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT/edit/main/README.md#telegram-ledstrip)
 
 # Philips Hue Assignment
 <details open>
@@ -104,8 +105,108 @@ For maybe a few bucks? Adafruit also works on mobile! 😁👍
 
 </details>
 
+# Telegram Ledstrip
+<details open>
+
+##  First Try
+
+<details open>
+
+### Installing the libraries
+- Open the libraries tab and download the following:
+    - Install UniversalTelegramBot by Brian Lough
+    - Install ArduinoJson by Benoit Blanchon
+
+### Installing Telegram and creating a bot
+- Open Telegram and make a Telegram account
+- Search for the BotFather
+<img src="https://i.gyazo.com/57bd44fa2332bf159b12591aa5bb36ed.png" width="375px" alt="The BotFather">
+
+- Follow the setup for a new bot
+<img src="https://i.gyazo.com/f0a67450174155640180bc3bd18a7853.png" alt="BotFather Conversation">
+
+- Keep the bot name, username and bot token
+- Copy this code into Arduino:
+```
+#include <ESP8266WiFi.h>
+#include <WiFiClientSecure.h>
+#include <TelegramBot.h>
+
+#define LED 15
+#define DATA_PIN D5
+
+const char* ssid = "wifi_username";
+const char* password = "wifi_password";
+
+const char BotToken[] = "bot_token";
+
+WiFiClientSecure net_ssl;
+TelegramBot bot (BotToken, net_ssl);
+
+void setup()
+{
+  Serial.begin(115200);
+  while (!Serial) {} //Start running when the serial is open
+  delay(3000);
+  Serial.print("Connecting WiFi.");
+  Serial.println(ssid);
+  while (WiFi.begin(ssid, password) != WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+  bot.begin();
+  pinMode(LED, OUTPUT);
+}
+void loop() 
+{  
+  message m = bot.getUpdates(); // Read new messages  
+  if (m.text.equals("on")) 
+  {  
+    digitalWrite(LED, 1);   
+    bot.sendMessage(m.chat_id, "LED is ON");
+  }  
+  else if (m.text.equals("off")) 
+  {  
+    digitalWrite(LED, 0);   
+    bot.sendMessage(m.chat_id, "LED is OFF");  
+  } 
+}
+```
+- Fill in wifi_username/wifi_pass and bot_token
+- Make sure your Arduino is connected 
+<img src="https://i.gyazo.com/8a400f8599551d8f3acc9e89acbe50b6.jpg" alt="connected Arduino">
+
+- Verify the code
+<img src="https://i.gyazo.com/90506e511d885f17daf4e0e9fd57cd91.png" alt="Exit Status 1">
+
+- Get Error Code: Exit Status 1
+- Google the error code
+<img src="https://i.gyazo.com/4ccfffb5a383ea985f536ca196d73038.png" alt="Fall into Despair">
+
+- Cry your heart out
+- Try messing with the code trying to see an issue
+- Do not succeed
+- Cry again
+
+</details>
+
+## Second Try
+<details open>
+
+
+
+</details>
+
+</details>
+
 # Markup quicksheet
-<details closed>
+```
+coding area
+```
+
  - testing
     - testing
     
