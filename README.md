@@ -196,6 +196,27 @@ void loop()
 ## Second Try
 <details open>
 
+### Requirements
+- An Arduino ESP8266 
+- A LED strip
+- Telegram
+- Internet
+
+### Preparing your Telegram Bot
+- Open Telegram and make a Telegram account
+- Search for the BotFather
+<img src="https://i.gyazo.com/57bd44fa2332bf159b12591aa5bb36ed.png" width="375px" alt="The BotFather">
+
+- Follow the setup for a new bot
+<img src="https://i.gyazo.com/f0a67450174155640180bc3bd18a7853.png" alt="BotFather Conversation">
+
+- Keep the bot name, username and bot token
+    
+### Preparing Arduino
+- Connect your Arduino to your device and make sure it is connected.
+<img src="https://i.gyazo.com/8a400f8599551d8f3acc9e89acbe50b6.jpg" alt="connected Arduino">
+    
+- I'm so lost right now...
 
 
 </details>
