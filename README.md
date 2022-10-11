@@ -3,8 +3,8 @@ By Raekwon Gerold
 
 ## Table of Contents 🗂
 
-1. 🏮 [Philips Hue](https://github.com/Falicer/IoT/edit/main/README.md#philips-hue-assignment)
-2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT/edit/main/README.md#telegram-ledstrip)
+1. 🏮 [Philips Hue](https://github.com/Falicer/IoT/blob/main/README.md#philips-hue-assignment)
+2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT/blob/main/README.md#telegram-ledstrip)
 
 # Philips Hue Assignment
 <details open>
