@@ -5,7 +5,7 @@ By Raekwon Gerold
 
 1. 🏮 [Philips Hue](https://github.com/Falicer/IoT#philips-hue-assignment)
 2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT#telegram-ledstrip)
-3. 🍶 [Sending/Receiving Adafruit IO Feed](https://github.com/Falicer/IoT#reading-other-peoples-adafruit-io-feed)
+3. 🍶 [Sending/Receiving Adafruit IO Feed](https://github.com/Falicer/IoT#sending/receiving-adafruit-io-feed)
 
 # Philips Hue Assignment
 <details open>
@@ -224,7 +224,7 @@ void loop()
 
 </details>
 
-# Reading other people's Adafruit IO feed
+# Sending/Receiving Adafruit IO Feed
 <details open>
 
 ### Requirements
@@ -314,6 +314,9 @@ Ex:
 - On Adafruit IO it will look similar to this
 <img src="https://i.gyazo.com/39b69367e82258e18cae35a10350dd30.png" alt="Adafruit feed view">
 </details>
+
+### Sources
+- [Adafruit IO Source Quickguide](https://docs.google.com/document/d/13Dvwrig2d11fmS7UafYM0o4nzgMpfTHDadrS2Py0mg0/edit)
 
 </details>
 
