@@ -267,6 +267,8 @@ If you feel lost, calmly go back through the steps
 </details> 
 
 ### Create an Adafruit IO Feed
+<details open>
+
 - Open the Feed tab and choose "Create Feed"
 - Give it the name you want ex: SharingFriendsFeed
 <img src="https://i.gyazo.com/005cbeace960a296d2f0c2b7c6324a6c.png" alt="Adafruit IO Feed creation">
@@ -290,7 +292,8 @@ Ex:
     
 - On Adafruit IO it will look similar to this
 <img src="https://i.gyazo.com/39b69367e82258e18cae35a10350dd30.png" alt="Adafruit feed view">
-    
+</details>
+
 </details>
 
 
