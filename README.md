@@ -234,14 +234,12 @@ void loop()
 - Adafruit IO
 - Arduino button
 
-### Make sure your board LED strip is attached to your Arduino correctly
+### Make sure your board button is attached to your Arduino correctly
 <details open>
 
 1. Make sure that the GND cable is connected to the GND pin
-2. Make sure that the Data/Pixel cable is connected to the D5 pin
-3. Make sure that the +5V cable is connected to the 3v3 Pin
-4. When done it should look this.
-<img src="https://i.postimg.cc/Jn7j8nmY/image.png" width="375px" alt="Arduino connected with LED">
+2. Make sure that the Data/Pixel cable is connected to the D0 pin
+3. Make sure that the +5V cable is connected to the 3v3(3.3) Pin
 
 </details>
 
@@ -271,13 +269,36 @@ If you feel lost, calmly go back through the steps
 
 - Open the Feed tab and choose "Create Feed"
 - Give it the name you want ex: SharingFriendsFeed
+- Make sure to put your Feed on "Public" so you and someone else can access it.
 <img src="https://i.gyazo.com/005cbeace960a296d2f0c2b7c6324a6c.png" alt="Adafruit IO Feed creation">
+
+### Sending information to your or someone else's Adafruit IO Feed
+<details open>
+- Open your Arduino IDE and go to examples > Adafruit IO Arduino > Adafruitio_20_shared_feed_write
+- In the config tab fill in your Adafruit IO username and Key and fill in the WiFi name and password.
+    - 🚨 The NodeMCU does not work on 5Ghz WiFi 🚨
+    - Preferably use the hotspot on your phone, this barely uses any data (less than 0.1mb an hour)
+<img src"https://i.gyazo.com/a663a760aa115ec4681137c6bba120c9.png" alt="Adafruit account and WiFi information>
+
+- Change the BUTTON_PIN 5 to BUTTON_PIN D0
+- in the feedread tab change the Feed_Owner and Feed_Name info to the feed you want to read from and/or write towards.
+Ex:
+<img src="https://i.gyazo.com/2edc983be205a34d687541da199a32a0.png" alt="Adafruit feedread Information">
+
+- Upload the code
+- Open your serial Monitor
+- Once connected click the button a few times
+You should see something like this now:
+<img src="https://i.gyazo.com/12f73a03a6a1c2076c0da0bbfa3ab716.png" alt="Adafruit feedread Sending">
+
+</details>
 
 ### Reading your or someone else's Adafruit IO Feed
 - Open your Arduino IDE and go to examples > Adafruit IO Arduino > Adafruitio_21_feedread
 - In the config tab fill in your Adafruit IO username and Key and fill in the WiFi name and password.
     - 🚨 The NodeMCU does not work on 5Ghz WiFi 🚨
     - Preferably use the hotspot on your phone, this barely uses any data (less than 0.1mb an hour)
+<img src"https://i.gyazo.com/a663a760aa115ec4681137c6bba120c9.png" alt="Adafruit account and WiFi information>
 - in the feedread tab change the Feed_Owner and Feed_Name info to the feed you want to read from.
 Ex:
 <img src="https://i.gyazo.com/2edc983be205a34d687541da199a32a0.png" alt="Adafruit feedread Information">
