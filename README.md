@@ -3,8 +3,9 @@ By Raekwon Gerold
 
 ## Table of Contents 🗂
 
-1. 🏮 [Philips Hue](https://github.com/Falicer/IoT/blob/main/README.md#philips-hue-assignment)
-2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT/blob/main/README.md#telegram-ledstrip)
+1. 🏮 [Philips Hue](https://github.com/Falicer/IoT#philips-hue-assignment)
+2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT#telegram-ledstrip)
+3. 🍶 [Sending/Receiving Adafruit IO Feed](https://github.com/Falicer/IoT#reading-other-peoples-adafruit-io-feed)
 
 # Philips Hue Assignment
 <details open>
@@ -231,6 +232,7 @@ void loop()
 - Arduino IDE
 - Internet or hotspot (2.4Ghz)
 - Adafruit IO
+- Arduino button
 
 ### Make sure your board LED strip is attached to your Arduino correctly
 <details open>
@@ -267,7 +269,7 @@ If you feel lost, calmly go back through the steps
 ### Create an Adafruit IO Feed
 - Open the Feed tab and choose "Create Feed"
 - Give it the name you want ex: SharingFriendsFeed
-<img src="https://i.gyazo.com/005cbeace960a296d2f0c2b7c6324a6c.png" width="375px" alt="Adafruit IO Feed creation">
+<img src="https://i.gyazo.com/005cbeace960a296d2f0c2b7c6324a6c.png" alt="Adafruit IO Feed creation">
 
 ### Reading your or someone else's Adafruit IO Feed
 - Open your Arduino IDE and go to examples > Adafruit IO Arduino > Adafruitio_21_feedread
@@ -278,7 +280,17 @@ If you feel lost, calmly go back through the steps
 Ex:
 <img src="https://i.gyazo.com/2edc983be205a34d687541da199a32a0.png" alt="Adafruit feedread Information">
 
-
+- Upload the code
+- Open your serial monitor
+- Once the owner of the feed is sending something towards it.
+<img src="https://i.gyazo.com/12f73a03a6a1c2076c0da0bbfa3ab716.png" alt="Adafruit feedread Sending">
+ 
+- Will you be able to see what it is.
+<img src="https://i.ibb.co/L6pSJg8/adafruit-IO.png" alt="Adafruit feedread Received">
+    
+- On Adafruit IO it will look similar to this
+<img src="https://i.gyazo.com/39b69367e82258e18cae35a10350dd30.png" alt="Adafruit feed view">
+    
 </details>
 
 
