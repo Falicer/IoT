@@ -223,6 +223,65 @@ void loop()
 
 </details>
 
+# Reading other people's Adafruit IO feed
+<details open>
+
+### Requirements
+- An Arduino
+- Arduino IDE
+- Internet or hotspot (2.4Ghz)
+- Adafruit IO
+
+### Make sure your board LED strip is attached to your Arduino correctly
+<details open>
+
+1. Make sure that the GND cable is connected to the GND pin
+2. Make sure that the Data/Pixel cable is connected to the D5 pin
+3. Make sure that the +5V cable is connected to the 3v3 Pin
+4. When done it should look this.
+<img src="https://i.postimg.cc/Jn7j8nmY/image.png" width="375px" alt="Arduino connected with LED">
+
+</details>
+
+### Install the Adafruit Library
+<details open>
+
+1. Open the library manager of your Arduino IDE
+2. Look up "Adafruit IO Arduino"
+3. Install it "Install All"
+
+This should go succesfull
+</details>
+
+### Make an Adafruit IO Account
+<details open>
+
+1. Go to [Adafruit IO Registration](https://accounts.adafruit.com/users/sign_up) and make a free account
+2. Go back to [Adafruit IO](https://io.adafruit.com/)
+3. Click on the yellow key in the menu
+4. Copy your key and username
+
+If you feel lost, calmly go back through the steps
+</details> 
+
+### Create an Adafruit IO Feed
+- Open the Feed tab and choose "Create Feed"
+- Give it the name you want ex: SharingFriendsFeed
+<img src="https://i.gyazo.com/005cbeace960a296d2f0c2b7c6324a6c.png" width="375px" alt="Adafruit IO Feed creation">
+
+### Reading your or someone else's Adafruit IO Feed
+- Open your Arduino IDE and go to examples > Adafruit IO Arduino > Adafruitio_21_feedread
+- In the config tab fill in your Adafruit IO username and Key and fill in the WiFi name and password.
+    - 🚨 The NodeMCU does not work on 5Ghz WiFi 🚨
+    - Preferably use the hotspot on your phone, this barely uses any data (less than 0.1mb an hour)
+- in the feedread tab change the Feed_Owner and Feed_Name info to the feed you want to read from.
+Ex:
+<img src="https://i.gyazo.com/2edc983be205a34d687541da199a32a0.png" alt="Adafruit feedread Information">
+
+
+</details>
+
+
 # Markup quicksheet
 ```
 coding area
