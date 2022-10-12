@@ -5,7 +5,7 @@ By Raekwon Gerold
 
 1. 🏮 [Philips Hue](https://github.com/Falicer/IoT#philips-hue-assignment)
 2. 🍘 [Telegram Ledstrip](https://github.com/Falicer/IoT#telegram-ledstrip)
-3. 🍶 [Sending/Receiving Adafruit IO Feed](https://github.com/Falicer/IoT#sending/receiving-adafruit-io-feed)
+3. 🍶 [Sending/Receiving Adafruit IO Feed](https://github.com/Falicer/IoT#sendingreceiving-adafruit-io-feed)
 
 # Philips Hue Assignment
 <details open>
