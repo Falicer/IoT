@@ -274,11 +274,13 @@ If you feel lost, calmly go back through the steps
 
 ### Sending information to your or someone else's Adafruit IO Feed
 <details open>
+
 - Open your Arduino IDE and go to examples > Adafruit IO Arduino > Adafruitio_20_shared_feed_write
 - In the config tab fill in your Adafruit IO username and Key and fill in the WiFi name and password.
     - 🚨 The NodeMCU does not work on 5Ghz WiFi 🚨
     - Preferably use the hotspot on your phone, this barely uses any data (less than 0.1mb an hour)
-<img src"https://i.gyazo.com/a663a760aa115ec4681137c6bba120c9.png" alt="Adafruit account and WiFi information>
+
+<img src="https://i.gyazo.com/a663a760aa115ec4681137c6bba120c9.png" alt="Adafruit account and WiFi information">
 
 - Change the BUTTON_PIN 5 to BUTTON_PIN D0
 - in the feedread tab change the Feed_Owner and Feed_Name info to the feed you want to read from and/or write towards.
@@ -298,7 +300,9 @@ You should see something like this now:
 - In the config tab fill in your Adafruit IO username and Key and fill in the WiFi name and password.
     - 🚨 The NodeMCU does not work on 5Ghz WiFi 🚨
     - Preferably use the hotspot on your phone, this barely uses any data (less than 0.1mb an hour)
-<img src"https://i.gyazo.com/a663a760aa115ec4681137c6bba120c9.png" alt="Adafruit account and WiFi information>
+
+<img src="https://i.gyazo.com/a663a760aa115ec4681137c6bba120c9.png" alt="Adafruit account and WiFi information2">
+
 - in the feedread tab change the Feed_Owner and Feed_Name info to the feed you want to read from.
 Ex:
 <img src="https://i.gyazo.com/2edc983be205a34d687541da199a32a0.png" alt="Adafruit feedread Information">
@@ -313,6 +317,18 @@ Ex:
     
 - On Adafruit IO it will look similar to this
 <img src="https://i.gyazo.com/39b69367e82258e18cae35a10350dd30.png" alt="Adafruit feed view">
+</details>
+
+### Got Errors?
+<details open>
+
+- Check if the Adafruit IO information is filled in correctly.
+- Check if your WiFi name and password are filled in correctly.
+- Check if you have the right feed owner and feed filled in correctly.
+- Check in the Arduino IDE Serial Monitor if the Baud is set on 115200.
+- Check if you can upload it.
+- Check if you plugged your Arduino correctly according to the manual.
+
 </details>
 
 ### Sources
